@@ -23,6 +23,11 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      font-size: 5rem;
+    }
   }
 
   &--sub {
@@ -31,6 +36,10 @@ body {
     font-weight: 700;
     letter-spacing: 1.75rem;
     animation: moveInRight 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
